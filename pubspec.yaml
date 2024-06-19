@@ -1,0 +1,50 @@
+name: bees_bakery
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  provider: ^6.0.0 
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/cake_brownies.jpg
+    - assets/images/cake_chocolate.jpg
+    - assets/images/cake_filled.jpg
+    - assets/images/cake_fruit.jpg
+    - assets/images/muffin.jpg
+    - assets/images/muffin_chocolate.jpg
+    - assets/images/dounghnut_stawberry_cream.jpg
+    - assets/images/dounghnut_chocolate_cream.jpg
+    - assets/images/doughnut_rainbow.jpg
+    - assets/images/doughnut_filled.jpg
+    - assets/images/doughnut_dark_colors.jpg
+    - assets/images/cupcake_vanilla_straw.jpg
+    - assets/images/doughnut_birthday.jpg
+    - assets/images/cupcake_stawberry.jpg
+    - assets/images/cupcake_yellow_chocolate.jpg
+    - assets/images/cupcake_strawberry_vanilla.jpg
+    - assets/images/cupcake_stawberry.jpg
+    - assets/images/cupcake_double_chcolate.jpg
+    - assets/images/cupcake_dark_chocolate.jpg
+    - assets/images/cupcake_chocolate_ras.jpg
+    - assets/images/cupcake_carmel.jpg
+    - assets/images/cupcake_brown_ras.jpg
+    - assets/images/cookie_oreo.jpg
+    - assets/images/cookie_gingerbread.jpg
+    - assets/images/cookie_chocolatechip.jpg
+    - assets/images/cookie_android.jpg
+    - assets/images/cake_pretty.jpg

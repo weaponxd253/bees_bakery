@@ -1,0 +1,56 @@
+class BakeryOrder {
+  final String orderId;
+  final String customerName;
+  final String customerContact;
+  final List<Cake> cakes;
+  final DateTime orderDate;
+  final DateTime deliveryDate;
+  final String orderStatus;
+  double totalAmount;
+
+  BakeryOrder({
+    required this.orderId,
+    required this.customerName,
+    required this.customerContact,
+    required this.cakes,
+    required this.orderDate,
+    required this.deliveryDate,
+    required this.orderStatus,
+    required this.totalAmount,
+  });
+
+  factory BakeryOrder.fromJson(Map<String, dynamic> json) {
+    return BakeryOrder(
+      orderId: json['orderId'],
+      customerName: json['customerName'],
+      customerContact: json['customerContact'],
+      cakes: (json['cakes'] as List).map((item) => Cake.fromJson(item)).toList(),
+      orderDate: DateTime.parse(json['orderDate']),
+      deliveryDate: DateTime.parse(json['deliveryDate']),
+      orderStatus: json['orderStatus'],
+      totalAmount: json['totalAmount'].toDouble(),
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'orderId': orderId,
+      'customerName': customerName,
+      'customerContact': customerContact,
+      'cakes': cakes.map((item) => item.toJson()).toList(),
+      'orderDate': orderDate.toIso8601String(),
+      'deliveryDate': deliveryDate.toIso8601String(),
+      'orderStatus': orderStatus,
+      'totalAmount': totalAmount,
+    };
+  }
+
+  // Method to calculate the total amount
+  double calculateTotalAmount() {
+    double total = 0.0;
+    for (var cake in cakes) {
+      total += cake.price * cake.quantity;
+    }
+    return total;
+  }
+}
