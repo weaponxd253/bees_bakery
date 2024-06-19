@@ -71,4 +71,42 @@ lib/
 └── providers/
     ├── cart_provider.dart
     └── item_provider.dart
+```
 
+## Dependencies
+provider: ^6.0.0
+cupertino_icons: ^1.0.6
+Ensure these dependencies are added in your pubspec.yaml file.
+
+## Usage
+
+**Sign In**
+- Navigate to the sign-in screen on app start.
+- Enter email and password to sign in.
+
+  
+**Sign Up**
+- Navigate to the sign-up screen from the sign-in screen.
+- Enter email, password, and confirm the password to create a new account.
+
+  
+**Forgot Password**
+- Navigate to the forgot password screen from the sign-in screen.
+- Enter email to receive a password reset link.
+
+  
+**Browse and Add to Cart**
+-Browse through deals, categories, and individual items.
+-Add items to the cart from the home screen.
+
+
+**Checkout and Order Confirmation**
+- Proceed to checkout from the cart screen.
+- Enter shipping address and payment details.
+- Receive order confirmation after placing the order.
+  
+## License
+This project is licensed under the MIT License.
+
+## Author
+This project was developed by Xavier Denson.
