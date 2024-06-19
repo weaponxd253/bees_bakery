@@ -21,6 +21,8 @@ Bee's Bakery is a Flutter application designed for a bakery shop. It allows user
 6. **Checkout Screen**: Collects shipping address and payment details.
 7. **Order Confirmation Screen**: Displays order confirmation details.
 
+   
+
 ## Installation
 
 1. **Clone the repository:**
@@ -69,12 +71,12 @@ lib/
     ├── cart_provider.dart
     └── item_provider.dart
 
-Dependencies
+##Dependencies
 provider: ^6.0.0
 cupertino_icons: ^1.0.6
 Ensure these dependencies are added in your pubspec.yaml file.
 
-Usage
+##Usage
 Sign In
 Navigate to the sign-in screen on app start.
 Enter email and password to sign in.
@@ -91,6 +93,7 @@ Checkout and Order Confirmation
 Proceed to checkout from the cart screen.
 Enter shipping address and payment details.
 Receive order confirmation after placing the order.
+
 
 Contributing
 Fork the repository
